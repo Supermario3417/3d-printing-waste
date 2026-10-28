@@ -1,0 +1,135 @@
+/* ---------- Hero banner ---------- */
+.hero {
+    color: var(--chrome-ink);
+    background: linear-gradient(118deg, transparent 0 38%, rgba(255,255,255,0.05) 38% 58%, transparent 58%), linear-gradient(62deg, rgba(0,0,0,0.18) 0 22%, transparent 22% 70%, rgba(255,255,255,0.06) 70%), linear-gradient(135deg, var(--slate-1), var(--slate-2) 55%, var(--slate-3));
+    font-family: var(--font-site);
+    text-align: center;
+    padding-inline: 16px;
+    padding-block: 3.5rem;
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center;
+}
+.hero h1 {
+    font-family: var(--font-site);
+    font-weight: 800;
+    font-size: clamp(2.3rem, 7vw, 4rem);
+    letter-spacing: -0.01em;
+}
+.hero .sub {
+    font-size: clamp(1.4rem, 4.5vw, 2.6rem);
+    font-weight: 500;
+    line-height: 1.15;
+}
+.hero .meta {
+    font-size: 0.95rem;
+    color: rgba(243, 245, 249, 0.75);
+}
+.hero.big {
+    padding-block: 5.5rem;
+}
+/* ---------- Page body ---------- */
+.wrap {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding-inline: 16px;
+    padding-block: 2.75rem 4rem;
+    display: grid;
+    gap: 3rem;
+}
+.wrap > iframe {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 600 / 371;
+    margin-inline: auto;
+
+    border: 5px solid var(--hi);
+}
+section {
+    display: grid;
+    gap: 1rem;
+}
+section > h2 {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+}
+.lede {
+    font-size: 1.12rem;
+    max-width: 65ch;
+}
+.status {
+    justify-self: start;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border: 1.5px solid currentColor;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+.status.go {
+    color: var(--go);
+}
+.status.hold {
+    color: var(--hold);
+}
+.status.drop {
+    color: var(--drop);
+}
+.status.none {
+    color: var(--muted);
+}
+/* Empty element pages */
+.empty {
+    background: var(--sheet);
+    border: 2px dashed var(--muted);
+    padding: 2rem 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+    justify-items: start;
+}
+.empty h2 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.empty p {
+    color: var(--muted);
+    max-width: 60ch;
+}
+.pager {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.pager a {
+    font-family: var(--font-site);
+    font-weight: 600;
+    text-decoration: none;
+    border: 1.5px solid var(--rule);
+    padding: 0.45rem 0.9rem;
+    background: var(--sheet);
+}
+.pager a:hover {
+    background: var(--hi);
+    color: var(--hi-ink);
+}
+footer.site {
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--rule);
+    padding-top: 1rem;
+}
+
+.report-image {
+    border: 5px solid var(--hi);
+}
+
+.description {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.4;
+}

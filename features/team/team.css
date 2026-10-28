@@ -1,0 +1,131 @@
+/* Team */
+.team-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+.member {
+    background: var(--sheet);
+    border: 2px solid var(--rule);
+    scroll-margin-top: 5rem;
+}
+.member-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.25rem;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 5px solid var(--rule);
+}
+.avatar {
+    width: 4rem;
+    height: 4rem;
+    flex: none;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.6rem;
+    background: var(--hi);
+    color: var(--hi-ink);
+    border: 2px solid var(--hi-ink);
+    border-radius: 50%;
+}
+.member-head h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.member-head .alias {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+.member-head > div {
+    min-width: 0;
+}
+.photo {
+    width: 7.5rem;
+    height: 9rem;
+    flex: none;
+    object-fit: cover;
+    object-position: center 12%;
+    background: #000;
+    border: 2px solid var(--rule);
+    max-width: 100%;
+}
+.member-body {
+    padding: 1.25rem 1.5rem 1.5rem;
+    display: grid;
+    gap: 1.25rem;
+}
+.member-body .intro {
+    max-width: 65ch;
+}
+.facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.5rem;
+}
+.fact {
+    display: grid;
+    gap: 0.35rem;
+    align-content: start;
+    min-width: 0;
+}
+.fact h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.fact ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.3rem;
+}
+.fact li {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    border-bottom: 1px dashed var(--grid);
+    padding-bottom: 0.25rem;
+}
+.fact li .yrs {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--muted);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+.lang {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+.lang span {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    border: 1.5px solid var(--rule);
+    padding: 0.1rem 0.55rem;
+}
+.role-box {
+    border-left: 5px solid var(--hi);
+    padding: 0.4rem 0 0.4rem 0.9rem;
+    display: grid;
+    gap: 0.15rem;
+}
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+.member.pending .member-body p {
+    color: var(--muted);
+}
+@media (max-width: 640px) {
+    .facts {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .member-head, .member-body {
+        padding-inline: 1rem;
+    }
+}

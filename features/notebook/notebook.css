@@ -1,0 +1,251 @@
+/* Rubric checklist */
+.checklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    border: 1.5px solid var(--rule);
+    background: var(--sheet);
+}
+.checklist li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.25rem 1rem;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--grid);
+    align-items: start;
+}
+.checklist li:first-child {
+    border-top: 0;
+}
+.checklist strong {
+    display: block;
+}
+.checklist span.desc {
+    color: var(--muted);
+    font-size: 0.93rem;
+}
+/* Problem statement evolution */
+.evolution {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0;
+    border-left: 3px solid var(--rule);
+}
+.evolution li {
+    position: relative;
+    padding: 0 0 1.25rem 1.4rem;
+    display: grid;
+    gap: 0.2rem;
+}
+.evolution li:last-child {
+    padding-bottom: 0;
+}
+.evolution li::before {
+    content: "";
+    position: absolute;
+    left: -0.55rem;
+    top: 0.35rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: var(--sheet);
+    border: 3px solid var(--rule);
+}
+.evolution li.now::before {
+    background: var(--hi);
+}
+.evolution .when {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+.evolution .what {
+    font-weight: 700;
+}
+/* TOC */
+.toc {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.35rem;
+}
+.toc a {
+    display: grid;
+    grid-template-columns: 4.5rem 6.5rem minmax(0, 1fr);
+    gap: 0.75rem;
+    text-decoration: none;
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed var(--grid);
+}
+.toc a:hover span:last-child {
+    text-decoration: underline;
+}
+.toc .mono {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+}
+/* Entry sheets */
+.entries {
+    display: grid;
+    gap: 2.5rem;
+}
+.sheet {
+    background: var(--sheet);
+    border: 2px solid var(--rule);
+    scroll-margin-top: 5rem;
+}
+.sheet-body {
+    padding: 1.5rem 1.5rem 1.75rem;
+    display: grid;
+    gap: 1rem;
+    min-width: 0;
+}
+.sheet-body h3 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+.sheet-body ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    display: grid;
+    gap: 0.5rem;
+}
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.chip {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    background: var(--hi);
+    color: var(--hi-ink);
+    border: 2px solid var(--hi-ink);
+    border-radius: 999px;
+    padding: 0.1rem 0.9rem;
+}
+.note {
+    font-size: 0.92rem;
+    color: var(--muted);
+    font-style: italic;
+}
+/* Decision matrix */
+.matrix {
+    margin: 0;
+    display: grid;
+    gap: 0.6rem;
+    min-width: 0;
+    scroll-margin-top: 5rem;
+}
+.matrix-scroll {
+    overflow-x: auto;
+    border: 1.5px solid var(--rule);
+    background: var(--sheet);
+}
+.matrix table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 44rem;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    font-variant-numeric: tabular-nums;
+}
+.matrix th, .matrix td {
+    padding: 0.45rem 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--grid);
+}
+.matrix thead th {
+    font-family: var(--font-body);
+    font-size: 0.74rem;
+    font-weight: 700;
+    line-height: 1.25;
+    vertical-align: bottom;
+    background: var(--ink);
+    color: var(--sheet);
+}
+.matrix thead th span {
+    display: block;
+    font-family: var(--font-mono);
+    font-weight: 400;
+    opacity: 0.75;
+    margin-top: 0.2rem;
+}
+.matrix .prob {
+    text-align: left;
+    font-family: var(--font-body);
+    white-space: nowrap;
+}
+.matrix tbody .prob {
+    font-size: 0.88rem;
+}
+.matrix .total {
+    font-weight: 500;
+    border-left: 2px solid var(--rule);
+}
+.matrix tr.short .prob, .matrix tr.short .total {
+    font-weight: 700;
+}
+.matrix tr.short .total {
+    background: var(--hi);
+    color: var(--hi-ink);
+}
+.matrix tr.cut th, .matrix tr.cut td {
+    color: var(--muted);
+    opacity: 0.8;
+}
+.matrix figcaption {
+    font-size: 0.88rem;
+    color: var(--muted);
+}
+.matrix figcaption strong {
+    color: var(--ink);
+}
+/* Drafting title block */
+.titleblock {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 0.8fr;
+    border-top: 5px solid var(--rule);
+    font-size: 0.9rem;
+}
+.titleblock > div {
+    padding: 0.5rem 0.75rem;
+    min-width: 0;
+}
+.titleblock .val {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+}
+.tb-row1 > div + div {
+    border-left: 5px solid var(--rule);
+}
+.tb-row1, .tb-row2 {
+    display: contents;
+}
+.tb-desc {
+    grid-column: 1 / 3;
+    border-top: 5px solid var(--rule);
+}
+.tb-auth {
+    grid-column: 3 / 4;
+    border-top: 5px solid var(--rule);
+    border-left: 5px solid var(--rule);
+    text-align: center;
+}
+.tb-auth .val {
+    display: grid;
+}
+.tb-key {
+    font-weight: 700;
+    margin-right: 0.35rem;
+}

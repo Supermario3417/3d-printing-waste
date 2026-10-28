@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>Element B · 3D Printing Waste</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Fira+Sans:wght@500;600;800&amp;family=Barlow+Condensed:wght@600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" />
+        <link rel="stylesheet" href="../../css/global.css" />
+        <link rel="stylesheet" href="../../css/layout.css" />
+        <link rel="stylesheet" href="../../css/navigation.css" />
+        <link rel="stylesheet" href="../../features/project-validation/project-validation.css" />
+        <link rel="stylesheet" href="../../features/notebook/notebook.css" />
+        <link rel="stylesheet" href="../../css/responsive.css" />
+
+        <link rel="icon" href="/images/favicon.ico">
+    </head>
+    <body data-current-page="element-b" data-base-path="../../">
+        <div id="site-navigation"></div>
+        <main id="main-content">
+            <!-- Element B -->
+            <header class="hero">
+                <h1>Element B</h1>
+                <span class="sub">Product &amp; Patent Research</span>
+                <span class="meta">Problem Validation</span>
+            </header>
+            <div class="wrap">
+                <p class="lede">We studied five existing products and three patents for recycling 3D printing waste into new filament. For each one we summarized its purpose, parts, and process, then critiqued what it is missing.</p>
+                <section aria-labelledby="b-compare-h">
+                    <h2 id="b-compare-h">At a glance</h2>
+                    <div class="compare-scroll">
+                        <table class="compare">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Product / patent</th>
+                                    <th scope="col">Shreds or grinds prints</th>
+                                    <th scope="col">Melts &amp; extrudes</th>
+                                    <th scope="col">Winds onto spool</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="kind">Product</span>3DPany C1</th>
+                                    <td class="c no">No</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="money">$2,246.55</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="kind">Product</span>Filament Maker and Shredder</th>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c na">Not stated</td>
+                                    <td class="money">$1,300</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="kind">Product</span>Felfil Shredder and Spooler</th>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="money">$3,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="kind">Product</span>Desktop Filament Maker Machine</th>
+                                    <td class="c na">Unclear</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="money">Not listed</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="kind">Product</span>Filabot EX6 bundle</th>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="money">Not listed</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="kind">Patent</span>CN108556360A</th>
+                                    <td class="c no">No</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c na">Not stated</td>
+                                    <td class="money">—</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="kind">Patent</span>US20160107337A1</th>
+                                    <td class="c no">No</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c na">Not stated</td>
+                                    <td class="money">—</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="kind">Patent</span>US10744697</th>
+                                    <td class="c no">No</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="c yes">Yes</td>
+                                    <td class="money">—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="note">Based on our summary sheets. "Not stated" means the product or patent does not say. Prices are as we found them.</p>
+                </section>
+                <section aria-labelledby="b-find-h">
+                    <h2 id="b-find-h">What we found</h2>
+                    <ul class="findings">
+                        <li>
+                            <strong>Grinding is the gap.</strong> Four of the eight assume the waste is already ground up or in pellets, so someone still has to break up failed prints by hand, often with a hammer or power tool.</li>
+                        <li>
+                            <strong>Machines that do shred still need manual work.</strong> The multi-part systems make you move material from the shredder to the extruder (and spooler) yourself.</li>
+                        <li>
+                            <strong>Cost is high.</strong> The priced options run from $1,300 to about $3,000, and some need replacement parts like blades.</li>
+                        <li>
+                            <strong>Size and upkeep matter.</strong> Some systems are heavy (28 kg) or take up a lot of space, and pellet extruders can clog if melted plastic dries inside.</li>
+                    </ul>
+                </section>
+                <section aria-labelledby="b-sheets-h">
+                    <h2 id="b-sheets-h">Summary sheets</h2>
+                    <div class="pgrid">
+                        <article class="pcard">
+                            <div class="pcard-head">
+                                <div class="tags">
+                                    <span class="status product">Product 1</span>
+                                    <span class="score">$2,246.55</span>
+                                </div>
+                                <h3>3DPany C1 Filament Extruder</h3>
+                                <span class="note">Listed as: Filament Extruder, 3D Printer Filament Maker, Waste Recycling 1.75mm, Filament Recycle Machine, 3DPany C1</span>
+                            </div>
+                            <div class="pcard-body">
+                                <div>
+                                    <span class="label">Summary</span>
+                                    <p>This product takes ground material, and extrudes it downward, where it gets redirected by a wheel to help it wind around a spool.</p>
+                                </div>
+                                <div>
+                                    <span class="label">Critique</span>
+                                    <p>This product only focuses on the extrusion side, where it takes filament that's already ground up to be extruded. It does not help with grinding filament to get ready for extrusion. This makes grinding the filament for extrusion manual work, alongside the amount of time it can take to use a hammer or power tool for that occasion. This product is also an expensive $2,246.55, which can be expensive just to extrude material.</p>
+                                </div>
+                            </div>
+                            <a class="doclink" href="https://www.amazon.com/Filament-extruder-recycling1-75mm-3dpany-C1/dp/B0F7H4DZY5" target="_blank" rel="noopener">Open product page (Amazon) ↗</a>
+                        </article>
+                        <article class="pcard">
+                            <div class="pcard-head">
+                                <div class="tags">
+                                    <span class="status product">Product 2</span>
+                                    <span class="score">$1,300 bundle</span>
+                                </div>
+                                <h3>The Filament Maker and Shredder</h3>
+                            </div>
+                            <div class="pcard-body">
+                                <div>
+                                    <span class="label">Summary</span>
+                                    <p>This product utilizes two different components, one for shredding and one for melting. They are comparatively compact and can fit next to a 3D printer. The shredder has a drying system that is used to suck out all of the moisture from failed 3D prints. You can also shred multiple filaments to create scented, multi-color, and higher performance products. Both components have highly integrated technology and settings.</p>
+                                </div>
+                                <div>
+                                    <span class="label">Critique</span>
+                                    <p>The major flaw of this product is the amount of manual work required. For example, the customer has to transfer the scraps from the shredder into the actual filament maker. They also have to hand feed the filament which takes time and patience. Finally, it costs a whopping $1300 for both components with a deal, and the shredder cost $499 individually while the filament maker cost $849.</p>
+                                </div>
+                            </div>
+                            <a class="doclink" href="https://www.creality.com/blog/filament-maker-m1-shredder-r1-indiegogo-launch" target="_blank" rel="noopener">Open product page (Creality) ↗</a>
+                        </article>
+                        <article class="pcard">
+                            <div class="pcard-head">
+                                <div class="tags">
+                                    <span class="status product">Product 3</span>
+                                    <span class="score">$3,000 bundle</span>
+                                </div>
+                                <h3>Felfil Shredder and Spooler</h3>
+                            </div>
+                            <div class="pcard-body">
+                                <div>
+                                    <span class="label">Summary</span>
+                                    <p>This product sells 3 components and can be bought as a deal for $3000. It sells the shredder, extruder, and spooler. There is not much information about how this product works, however, they do sell separate parts such as the blades, a manual shredder, and much more. The dimensions are 47 x 40 x 45 cm and it weighs around 28 kg which is heavy.</p>
+                                </div>
+                                <div>
+                                    <span class="label">Critique</span>
+                                    <p>The major flaw is that while looking at the websites, it looks like they sell individual parts at a very high cost with replacement blades costing up to $100. This also hints towards the need of the parts needing replacement every now and then, racking up the costs even more. To add on, this product has a lot of manual labor, needing you to transfer the materials from the shredder to the extruder to the spooler, making it time consuming.</p>
+                                </div>
+                            </div>
+                            <a class="doclink" href="https://felfil.com/shop/bundle-felfil-evo-spooler-shredder/" target="_blank" rel="noopener">Open product page (Felfil) ↗</a>
+                        </article>
+                        <article class="pcard">
+                            <div class="pcard-head">
+                                <div class="tags">
+                                    <span class="status product">Product 4</span>
+                                </div>
+                                <h3>Desktop Filament Maker Machine</h3>
+                                <span class="note">Listed as: 3D Printer Extruder Filament Maker Machine, Desktop Filament Maker Machine, Digital Temperature Control, Recycled PET Bottle Recycler for Families, DIY Makers, Small Studios (Red)</span>
+                            </div>
+                            <div class="pcard-body">
+                                <div>
+                                    <span class="label">Summary</span>
+                                    <p>This product converts waste into 3D printing consumables without a complicated pretreatment. It integrates heating, temperature control, traction, and winding in order to make the new filament. It is relatively light (2.4 kg) and compact (A4). It is good for recycling 3D printing waste and plastic water bottles to reduce costs.</p>
+                                </div>
+                                <div>
+                                    <span class="label">Critique</span>
+                                    <p>The major flaw in this product is that it does not say how the blender works, or how this product can blend up 3D prints. It shows how it is useful for blending up water bottles, but not much on already made 3D prints which are much harder to shred and tear down.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="pcard">
+                            <div class="pcard-head">
+                                <div class="tags">
+                                    <span class="status patent">Patent 1</span>
+                                </div>
+                                <h3>CN108556360A</h3>
+                            </div>
+                            <div class="pcard-body">
+                                <div>
+                                    <span class="label">Summary</span>
+                                    <p>The patent describes a heated 3D printing waste recycling process. It operates through 5 units including a heating + melting unit, a pressing unit, a cooling unit, a mechanical cutting unit, and an extrusion system.</p>
+                                </div>
+                                <div>
+                                    <span class="label">Critique</span>
+                                    <p>There are many flaws in this patent including that it fails to include how the device would gain this raw material. It is fairly difficult to straight up melt solid 3D prints. It currently assumes that 3D print waste is already smashed up and can be directly transported into the machine. However, not all wastes are grinded up, meaning you require a blender of some sort for this machine to work.</p>
+                                </div>
+                            </div>
+                            <a class="doclink" href="https://patentimages.storage.googleapis.com/7f/f1/de/9dd875678b23de/CN108556360A.pdf" target="_blank" rel="noopener">Open patent ↗</a>
+                        </article>
+                        <article class="pcard">
+                            <div class="pcard-head">
+                                <div class="tags">
+                                    <span class="status patent">Patent 2</span>
+                                </div>
+                                <h3>US20160107337A1</h3>
+                            </div>
+                            <div class="pcard-body">
+                                <div>
+                                    <span class="label">Summary</span>
+                                    <p>This patent includes the stages of cleaning, drying, modifying, and heating the material to shape it into something you choose.</p>
+                                </div>
+                                <div>
+                                    <span class="label">Critique</span>
+                                    <p>This invention focuses on getting the material molded, which is good for extruding material, but it can take a long time to melt the material for extrusion, which makes it vital to grind material into tiny pieces.</p>
+                                </div>
+                            </div>
+                            <a class="doclink" href="https://patents.google.com/patent/US20160107337A1/en" target="_blank" rel="noopener">Open patent ↗</a>
+                        </article>
+                        <article class="pcard">
+                            <div class="pcard-head">
+                                <div class="tags">
+                                    <span class="status product">Product 5</span>
+                                </div>
+                                <h3>Filabot EX6 Industrial Extruder Bundle</h3>
+                            </div>
+                            <div class="pcard-body">
+                                <div>
+                                    <span class="label">Summary</span>
+                                    <p>This product shreds material and remolds it into filament, which gets taken over a long runway to be wound into a spool.</p>
+                                </div>
+                                <div>
+                                    <span class="label">Critique</span>
+                                    <p>This product requires multiple pieces to be aligned in a sequence, which can take up a lot more space than other products. This is also split into three parts, which can take more manual labor to get the extruded material through certain parts.</p>
+                                </div>
+                            </div>
+                            <a class="doclink" href="https://www.filabot.com/products/ex6-industrial-extruder-bundle?variant=49527648813334" target="_blank" rel="noopener">Open product page (Filabot) ↗</a>
+                        </article>
+                        <article class="pcard">
+                            <div class="pcard-head">
+                                <div class="tags">
+                                    <span class="status patent">Patent 3</span>
+                                </div>
+                                <h3>US10744697</h3>
+                            </div>
+                            <div class="pcard-body">
+                                <div>
+                                    <span class="label">Summary</span>
+                                    <p>This product is an extruder designed to melt pellets and heat them up. It first gets fed plastic pellets from a hopper, then a heavy screw does the melting. The plastic is pushed and heat is generated to melt the plastic efficiently. Then a motor pulls the plastic to the correct filament size.</p>
+                                </div>
+                                <div>
+                                    <span class="label">Critique</span>
+                                    <p>One of the main issues is cleaning. If the plastic melted and dries out in the machine, then it creates a clogging problem which could cause the whole machine to break down due to it clogging.</p>
+                                </div>
+                            </div>
+                            <a class="doclink" href="https://patentimages.storage.googleapis.com/00/ba/13/be2a23275f9fd4/US10744697.pdf" target="_blank" rel="noopener">Open patent ↗</a>
+                        </article>
+                    </div>
+                </section>
+                <nav class="pager" aria-label="Element pages">
+                    <a href="element-a.html">← Element A</a>
+                    <a href="element-c.html">Element C →</a>
+                </nav>
+            </div>
+        </main>
+        <script src="../../js/navigation.js" defer="defer"></script>
+    </body>
+</html>
