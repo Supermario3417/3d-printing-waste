@@ -124,12 +124,12 @@ footer.site {
     padding-top: 1rem;
 }
 
-.report-image {
-    border: 5px solid var(--hi);
-}
-
 .description {
     font-size: 0.9rem;
     color: var(--muted);
     line-height: 1.4;
+}
+
+.indent1 {
+    padding-left: 40px;
 }

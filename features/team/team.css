@@ -43,8 +43,9 @@
     min-width: 0;
 }
 .photo {
-    width: 7.5rem;
-    height: 9rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 4rem;
     flex: none;
     object-fit: cover;
     object-position: center 12%;
@@ -118,6 +119,23 @@
     flex-wrap: wrap;
     gap: 0.6rem;
 }
+
+.doclink {
+    justify-self: start;
+    font-family: var(--font-site);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    border: 1.5px solid var(--rule);
+    padding: 0.3rem 0.7rem;
+    margin-top: 0.15rem;
+}
+
+.doclink:hover {
+    background: var(--hi);
+    color: var(--hi-ink);
+}
+
 .member.pending .member-body p {
     color: var(--muted);
 }

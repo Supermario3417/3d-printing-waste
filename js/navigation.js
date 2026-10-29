@@ -5,7 +5,7 @@ const navigationGroups = [
         elements: [
             { letter: "A", title: "Problem Justification" },
             { letter: "B", title: "Product & Patent Research" },
-            { letter: "C" }
+            { letter: "C", title: "Design Requirements" }
         ]
     },
     {
@@ -231,7 +231,7 @@ function initializeBackgroundParallax() {
         const scrollPosition = window.scrollY;
         const root = document.documentElement;
 
-        root.style.setProperty("--background-scroll-y", `${scrollPosition * 0.22}px`);
+        root.style.setProperty("--background-scroll-y", `${scrollPosition * 0.13}px`);
         updateScheduled = false;
     }
 
