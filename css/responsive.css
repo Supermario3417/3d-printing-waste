@@ -30,4 +30,11 @@
     .checklist li {
         grid-template-columns: minmax(0, 1fr);
     }
+
+    .menu-icon {
+        margin-left: 0px;
+    }
+    .menu-title {
+        margin-right: 0px;
+    }
 }

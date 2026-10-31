@@ -34,7 +34,7 @@ const navigationGroups = [
             { letter: "K" },
             { letter: "L" }
         ]
-    }
+    },
 ];
 
 function createNavigationLink(label, href, pageId) {
@@ -104,7 +104,7 @@ function createNavigation(basePath, currentPage) {
     const brand = document.createElement("a");
     brand.className = "brand";
     brand.href = `${basePath}index.html`;
-    brand.innerHTML = '<span class="brand-mark">PLTW</span>3D Printing Waste';
+    brand.innerHTML = '<img class="menu-icon" src="../../images/WebsiteIconOutline.png" alt="The Brand Icon" width="60" height="60"><p class="menu-title">3D Printing Waste</p>';
 
     const menuToggle = document.createElement("button");
     menuToggle.className = "menu-toggle";

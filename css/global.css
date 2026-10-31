@@ -23,8 +23,9 @@ img {
     --drop: #a8402c;
     --hold: #7d6410;
     --go: #2b7349;
+
     /* site chrome: same in both themes, set explicitly */
---slate-1: #2f3a50;
+    --slate-1: #2f3a50;
     --slate-2: #3c4864;
     --slate-3: #4a5a80;
     --chrome-ink: #f3f5f9;
