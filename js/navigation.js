@@ -104,7 +104,7 @@ function createNavigation(basePath, currentPage) {
     const brand = document.createElement("a");
     brand.className = "brand";
     brand.href = `${basePath}index.html`;
-    brand.innerHTML = '<img class="menu-icon" src="../../images/WebsiteIconOutline.png" alt="The Brand Icon" width="60" height="60"><p class="menu-title">3D Printing Waste</p>';
+    brand.innerHTML = `<img class="menu-icon" src="${basePath}images/WebsiteIconOutline.png" alt="The Brand Icon" width="60" height="60"><p class="menu-title">3D Printing Waste</p>`;
 
     const menuToggle = document.createElement("button");
     menuToggle.className = "menu-toggle";
