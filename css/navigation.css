@@ -1,8 +1,10 @@
 /* ---------- Top navigation ---------- */
-.topbar {
+#site-navigation {
     position: sticky;
     top: env(safe-area-inset-top, 0px);
     z-index: 20;
+}
+.topbar {
     background: var(--slate-1);
     color: var(--chrome-ink);
     font-family: var(--font-site);
