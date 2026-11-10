@@ -219,6 +219,18 @@ function initializeNavigation() {
     });
 }
 
+function initializeFooter() {
+    const footerHost = document.getElementById("site-footer");
+    if (!footerHost) {
+        throw new Error('The page is missing the "site-footer" container.');
+    }
+
+    const footer = document.createElement("footer");
+    footer.className = "site";
+    footer.textContent = "Arjun Shetty, Kushal Chavda, and Varun Nair · PLTW Design & Development · Barrington High School · Last entry November 9, 2026";
+    footerHost.replaceWith(footer);
+}
+
 function initializeBackgroundParallax() {
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (reducedMotion.matches) {
@@ -250,4 +262,5 @@ function initializeBackgroundParallax() {
 }
 
 initializeNavigation();
+initializeFooter();
 initializeBackgroundParallax();

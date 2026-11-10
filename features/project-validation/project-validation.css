@@ -403,3 +403,15 @@
         margin-inline: 1rem;
     }
 }
+
+.wrap > iframe {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 600 / 371;
+    margin-inline: auto;
+    margin-bottom: -40px;
+
+    border: 5px solid var(--hi);
+}

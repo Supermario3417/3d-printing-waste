@@ -11,24 +11,38 @@
         <link rel="stylesheet" href="../../css/layout.css" />
         <link rel="stylesheet" href="../../css/navigation.css" />
         <link rel="stylesheet" href="../../css/responsive.css" />
+        <link rel="stylesheet" href="../../features/milestones/milestones.css" />
 
         <link rel="icon" href="/images/favicon.ico">
     </head>
     <body data-current-page="milestones" data-base-path="../../">
         <div id="site-navigation"></div>
         <main id="main-content">
-            <!-- Milestone Presentations -->
-            <header class="hero">
-                <h1>Milestone Presentations</h1>
-            </header>
-            <div class="wrap">
-                <div class="empty">
-                    <span class="status none">Nothing posted yet</span>
-                    <h2>No presentations yet</h2>
-                    <p>Slides and recordings from each milestone presentation will go here once the team presents.</p>
-                </div>
+            <div class="wrap milestones-layout">
+                <section class="presentation-selection" aria-labelledby="presentation-list-title">
+                    <h2 id="presentation-list-title">Presentations</h2>
+                    <ul class="presentation-list" id="presentation-list"></ul>
+                </section>
+                <section class="display" aria-label="Presentation viewer">
+                    <div class="viewer-heading">
+                        <h2 id="presentation-title">Choose a presentation</h2>
+                        <span class="slide-count" id="slide-count"></span>
+                    </div>
+                    <div class="slide-frame">
+                        <img class="slide-image" id="slide-image" alt="" hidden />
+                        <div class="presentation-loader" id="presentation-loader" role="status" aria-live="polite" hidden>
+                            Loading presentation…
+                        </div>
+                        <button class="slide-control previous-slide" id="previous-slide" type="button" aria-label="Previous slide" disabled>‹</button>
+                        <button class="slide-control next-slide" id="next-slide" type="button" aria-label="Next slide" disabled>›</button>
+                        <button class="fullscreen-control" id="fullscreen-control" type="button" aria-label="Enter fullscreen">⛶ Fullscreen</button>
+                    </div>
+                    <p class="viewer-status" id="viewer-status" role="status" aria-live="polite">Choose a presentation to begin.</p>
+                </section>
             </div>
         </main>
+        <div id="site-footer"></div>
         <script src="../../js/navigation.js" defer="defer"></script>
+        <script src="../../js/milestones.js" defer="defer"></script>
     </body>
 </html>
