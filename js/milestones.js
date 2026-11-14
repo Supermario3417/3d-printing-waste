@@ -200,15 +200,25 @@ async function loadPresentations() {
     renderPresentations();
 }
 
+function nextSlide()
+{
+    showSlide(currentSlide + 1);
+}
+
+function previousSlide()
+{
+    showSlide(currentSlide - 1);
+}
+
 previousButton.addEventListener("click", () => {
     if (currentPresentation && !previousButton.disabled) {
-        showSlide(currentSlide - 1);
+        previousSlide();
     }
 });
 
 nextButton.addEventListener("click", () => {
     if (currentPresentation && !nextButton.disabled) {
-        showSlide(currentSlide + 1);
+        nextSlide();
     }
 });
 

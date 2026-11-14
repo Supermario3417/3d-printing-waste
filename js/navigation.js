@@ -104,7 +104,7 @@ function createNavigation(basePath, currentPage) {
     const brand = document.createElement("a");
     brand.className = "brand";
     brand.href = `${basePath}index.html`;
-    brand.innerHTML = `<img class="menu-icon" src="${basePath}images/WebsiteIconOutline.png" alt="The Brand Icon" width="60" height="60"><p class="menu-title">3D Printing Waste</p>`;
+    brand.innerHTML = `<img class="menu-icon" src="${basePath}images/WebsiteIconOutline.png" alt="The Brand Icon" width="60" height="60"><p class="menu-title">Pending...</p>`;
 
     const menuToggle = document.createElement("button");
     menuToggle.className = "menu-toggle";
@@ -227,7 +227,7 @@ function initializeFooter() {
 
     const footer = document.createElement("footer");
     footer.className = "site";
-    footer.textContent = "Arjun Shetty, Kushal Chavda, and Varun Nair · PLTW Design & Development · Barrington High School · Last entry November 9, 2026";
+    footer.textContent = "Copyright © by Arjun Shetty, Kushal Chavda, and Varun Nair · PLTW Design & Development · Barrington High School · Last entry November 11, 2026";
     footerHost.replaceWith(footer);
 }
 
